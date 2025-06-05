@@ -36,6 +36,14 @@ return {
     -- },
     --
     {
+        "nvim-telescope/telescope.nvim",
+        opts = {
+            defaults = {
+                hidden = true,
+            },
+        },
+    },
+    {
         "nvim-treesitter/nvim-treesitter",
         opts = {
             ensure_installed = {

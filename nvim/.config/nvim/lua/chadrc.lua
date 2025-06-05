@@ -42,4 +42,13 @@ M.base46 = {
     -- },
 }
 
+M.lspconfig = {
+  ["gr"] = {
+      function()
+        vim.lsp.buf.references()
+      end,
+      "   lsp references",
+    },
+}
+
 return M
