@@ -170,10 +170,14 @@ set $ws9 "9"
 set $ws10 "10"
 
 # Workspace 1
-for_window [class="brave"]                        move to workspace 1, workspace 1
+for_window [class="brave"]        move to workspace 1, workspace 1
 
 # Workspace 2
-for_window [class="konsole"]                      move to workspace 2, workspace 2
+for_window [class="konsole"]      move to workspace 2, workspace 2
+
+# Workspace 3
+for_window [class="kmail"]        move to workspace 3, workspace 3
+
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
