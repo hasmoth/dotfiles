@@ -42,7 +42,7 @@ set $mantle #181825
 set $crust #11111b
 
 # border colors
-set $active_border #6c7086
+set $active_border #6c708699
 set $inactive_border #181825
 
 # Font for window titles. Will also be used by the bar unless a different font
