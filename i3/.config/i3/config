@@ -245,10 +245,10 @@ client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
 
-default_border pixel 10
-# new_window normal 0
+default_border pixel 5
+new_window normal 5
 # new_float normal 0
-# hide_edge_borders both
+hide_edge_borders smart
 
 ## Toggle picom
 bindsym Control+$mod+d exec "~/.config/picom/togglecompositor.sh"
