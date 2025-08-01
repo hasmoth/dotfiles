@@ -4,6 +4,8 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
+map("v", "//", "y/<C-R>\"<CR>N", { desc = "Search from visual selection"})
+
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map("n", "<leader>di", vim.diagnostic.open_float, { desc = "open LSP float diagnostic" })
