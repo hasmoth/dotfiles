@@ -258,6 +258,6 @@ exec_always --no-startup-id sleep 1 && ~/.config/polybar/launch.sh
 # backround image
 exec_always --no-startup-id "feh --bg-scale /home/thomas/pictures/2001.jpeg"
 
-
+exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
 
 
