@@ -233,6 +233,7 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
+        bindsym Control+$mod+l exec "~/.config/i3/./lock.sh"
 }
 
 bindsym $mod+r mode "resize"
@@ -256,7 +257,10 @@ bindsym Control+$mod+d exec "~/.config/picom/togglecompositor.sh"
 exec_always --no-startup-id sleep 1 && ~/.config/polybar/launch.sh
 
 # backround image
-exec_always --no-startup-id "feh --bg-scale /home/thomas/pictures/2001.jpeg"
+exec_always --no-startup-id "feh --bg-scale /home/thomas/pictures/2001_bg.png"
+
+# lock screen
+exec --no-startup-id xss-lock -l /home/thomas/.config/i3/lock.sh
 
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
 
