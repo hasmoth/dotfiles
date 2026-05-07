@@ -73,7 +73,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # keyboard layout switch
-exec_always "setxkbmap -layout us,de -option 'grp:lalt_lshift_toggle'"
+exec_always "setxkbmap -layout us,de -option 'grp:win_space_toggle'"
 
 # notifications
 exec --no-startup-id dunst
@@ -145,7 +145,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+z floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
