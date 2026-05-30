@@ -169,9 +169,6 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# Alternate splitting on opening windows
-for_window [class=".*"] split toggle
-
 # Workspace 1
 for_window [class="brave"]        move to workspace 1, workspace 1
 
@@ -269,4 +266,6 @@ exec --no-startup-id xss-lock -l /home/thomas/.config/i3/lock.sh
 
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
 
+# spiral tiling mode
+exec_always --no-startup-id /home/thomas/.config/i3/autotiling -sr 1.4
 
