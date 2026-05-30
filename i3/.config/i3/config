@@ -259,7 +259,7 @@ bindsym Control+$mod+d exec "~/.config/picom/togglecompositor.sh"
 exec_always --no-startup-id sleep 1 && ~/.config/polybar/launch.sh
 
 # backround image
-exec_always --no-startup-id "feh --bg-scale /home/thomas/pictures/2001_bg.png"
+exec_always --no-startup-id "feh --bg-scale /home/thomas/pictures/a_white_light_pole_with_a_jet_trail_in_the_sky.jpg"
 
 # lock screen
 exec --no-startup-id xss-lock -l /home/thomas/.config/i3/lock.sh
