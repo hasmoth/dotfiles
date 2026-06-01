@@ -100,7 +100,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run -fn 'JetBrainsMono Nerd Font Mono 12' -i
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'JetBrainsMono Nerd Font Mono 12' -i"
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -sb '#181825' -sf '#f5c2e7' -fn 'JetBrainsMono Nerd Font Mono 12' -i"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
