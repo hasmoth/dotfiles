@@ -66,14 +66,16 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i1lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- /home/thomas/.config/i3/lock.sh
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
 # keyboard layout switch
-exec_always "setxkbmap -layout us,de -option 'grp:win_space_toggle'"
+# exec_always "setxkbmap -layout us,de -option 'grp:win_space_toggle'"
+exec_always --no-startup-id sleep 2 && setxkbmap -layout us,de -option 'grp:win_space_toggle'
 
 # notifications
 exec --no-startup-id dunst
@@ -262,7 +264,7 @@ exec_always --no-startup-id sleep 1 && ~/.config/polybar/launch.sh
 exec_always --no-startup-id "feh --bg-scale /home/thomas/pictures/a_white_light_pole_with_a_jet_trail_in_the_sky.jpg"
 
 # lock screen
-exec --no-startup-id xss-lock -l /home/thomas/.config/i3/lock.sh
+# exec --no-startup-id xss-lock -l /home/thomas/.config/i3/lock.sh
 
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
 
