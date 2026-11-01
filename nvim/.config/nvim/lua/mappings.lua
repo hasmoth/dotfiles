@@ -4,6 +4,10 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
+map("n", "<leader><TAB>", "<cmd>LspClangdSwitchSourceHeader<cr>", { desc = "Switch Header/Source" })
+map("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
+
+
 map("v", "//", "y/<C-R>\"<CR>N", { desc = "Search from visual selection"})
 
 map("n", "P", ":put!<CR>", { desc = "force newline for paste"})

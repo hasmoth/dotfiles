@@ -12,8 +12,9 @@ M.ui = {
 }
 
 M.base46 = {
-    theme = "rosepine"
-    -- hl_override = {
+    theme = "rosepine",
+    hl_override = {
+        ["NvimTreeCursorLine"] = { bg = "#383D4E" },
     --     ["@comment"] = { fg = "#539343" },
     --     ["@string"] = { fg = "#ce8f6a" },
     --     ["@keyword.repeat"] = { fg = "#d8a0df" },
@@ -39,7 +40,7 @@ M.base46 = {
     --     ["@variable.parameter"] = { fg = "#9a9a9a" },
     --     ["@variable.member"] = { fg = "white" },
     --     ["@property"] = { fg = "#9cdcfe" },
-    -- },
+    },
 }
 
 M.lspconfig = {
