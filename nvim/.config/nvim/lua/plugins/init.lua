@@ -62,6 +62,16 @@ return {
       highlightCapturesUnderCursor = true,
     },
   },
+    {
+      "nvim-treesitter/nvim-treesitter-context",
+      main = "treesitter-context",
+      cmd = { "TSContextToggle", "TSContextEnable", "TSContextDisable" },
+      opts = {
+          enable = true,
+          mode = "cursor",
+          max_lines = 3
+      },
+    },
   {
     "isakbm/gitgraph.nvim",
     dependencies = { 'sindrets/diffview.nvim' },
