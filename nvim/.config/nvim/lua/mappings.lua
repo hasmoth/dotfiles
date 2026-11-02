@@ -4,6 +4,14 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
+map('v', '<leader>sg', function()
+  require('telescope-live-grep-args.shortcuts').grep_visual_selection()
+end, { desc = 'Live Grep Visual Selection' })
+
+map("n", "<leader>gw", function()
+  require("telescope-live-grep-args.shortcuts").grep_word_under_cursor()
+end, { desc = "Grep word under cursor" })
+
 map("n", "<leader><TAB>", "<cmd>LspClangdSwitchSourceHeader<cr>", { desc = "Switch Header/Source" })
 map("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
 
