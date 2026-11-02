@@ -65,7 +65,8 @@ return {
     {
       "nvim-treesitter/nvim-treesitter-context",
       main = "treesitter-context",
-      cmd = { "TSContextToggle", "TSContextEnable", "TSContextDisable" },
+      cmd = "TSContext",
+      lazy = false,
       opts = {
           enable = true,
           mode = "cursor",
