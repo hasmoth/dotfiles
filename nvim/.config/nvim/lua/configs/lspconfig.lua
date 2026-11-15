@@ -19,15 +19,19 @@ local servers = {
     },
   },
   gopls = {},
-  pylsp = {
-    settings = {
-      autoimport = true,
-    },
-  },
+  -- pylsp = {
+  --   settings = {
+  --     autoimport = true,
+  --   },
+  -- },
   basedpyright = {
     settings = {
-      typeCheckingMode = "standard",
-      useLibraryCodeForTypes = true,
+      basedpyright = {
+        analysis = {
+          typeCheckingMode = "basic",
+          useLibraryCodeForTypes = true,
+        },
+      },
     },
   },
 }
